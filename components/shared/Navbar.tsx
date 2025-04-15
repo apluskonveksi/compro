@@ -1,44 +1,53 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { Button } from '../ui/button'
+import { Links } from '@/utils/data'
 
 const Navbar = () => {
   return (
-    <div className='-w-full px-2 py-4 md:px-12 lg:px-16 xl:px-24 2xl:px-32'>
-      <div className='w-full px-4 bg-white border-b-2 border-[#121212] '>
-        <div className='flex items-center justify-center p-4'>
-          <Link href="/" >
-            <Image src="/logo.png" width={200} height={200} priority={true} alt='logo-aplus-konveksi' className='object-cover px-4  ' />
-          </Link>
+    <>
+      <div className='w-full hidden md:block'>
+        <div className='bg-red-500 w-full  flex items-center justify-between px-2 py-2 md:px-12 lg:px-16 xl:px-24 2xl:px-32'>
+          <div className=' text-white text-left s,:text-center'>APLUS KONVEKSI BANDUNG</div>
+          <div className='hidden sm:flex items-center gap-4'>
+            {/* SOSIAL MEDIA */}
+            <div className='flex items-center justify-center gap-2'>
+              <Link href="/" target='_blank' className='px-2'>
+                <Image src="/instagram.png" width={20} height={20} alt='instagram' className='object-cover' />
+              </Link>
+              <Link href="/" target='_blank' className='px-2'>
+                <Image src="/facebook.png" width={20} height={20} alt='instagram' className='object-cover' />
+              </Link>
+              <Link href="/" target='_blank' className='px-2'>
+                <Image src="/youtube.png" width={20} height={20} alt='instagram' className='object-cover' />
+              </Link>
+            </div>
+            <Link href="/">
+              <Button variant="default" size="sm" className="cursor-pointer" >HUBUNGI KAMI</Button>
+            </Link>
+          </div>
+        </div>
+        <div className='-w-full px-2 py-4 md:px-12 lg:px-16 xl:px-24 2xl:px-32'>
+          <div className='w-full px-4 bg-white border-b border-[#121212] '>
+            <div className='flex items-center justify-center p-4'>
+              <Link href="/" >
+                <Image src="/logo.png" width={200} height={200} priority={true} alt='logo-aplus-konveksi' className='object-cover px-4  ' />
+              </Link>
+            </div>
+          </div>
+          <ul className='w-full max-w-7xl mx-auto uppercase hidden md:flex justify-between gap- py-4'>
+            {Links.map((link, index) => (
+              <li key={index} className='text-md lg:text-lg font-semibold'>
+                <Link href={link.href}>{link.name}</Link>
+              </li>
+            ))}
+
+          </ul>
         </div>
       </div>
-      <ul className='w-full max-w-7xl mx-auto uppercase flex justify-between gap- py-4'>
-        <li className='text-xl'>
-          <Link href="/">Home</Link>
-        </li>
-        <li className='text-xl'>
-          <Link href="/">portfolio</Link>
-        </li>
-        <li className='text-xl'>
-          <Link href="/">produk</Link>
-        </li>
-        <li className='text-xl'>
-          <Link href="/">layanan</Link>
-        </li>
-        <li className='text-xl'>
-          <Link href="/">gallery</Link>
-        </li>
-        <li className='text-xl'>
-          <Link href="/">size chart</Link>
-        </li>
-        <li className='text-xl'>
-          <Link href="/">Cara Order</Link>
-        </li>
-        <li className='text-xl'>
-          <Link href="/">Kontak</Link>
-        </li>
-      </ul>
-    </div>
+
+    </>
   )
 }
 

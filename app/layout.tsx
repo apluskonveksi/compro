@@ -24,13 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" translate="no" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
-        <div className="md:px-12 lg:px-16 xl:px-24 2xl:px-32 px-2">
-
+        <div className="w-full px-2 md:px-12 lg:px-16 xl:px-24 2xl:px-32 ">
           {children}
         </div>
       </body>
