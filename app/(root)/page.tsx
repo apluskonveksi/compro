@@ -5,8 +5,8 @@ export default function Home() {
     <>
       <section>
         {/* Hero */}
-        <div className="w-full h-full  pb-8">
-          <Image src="/hero.jpg" alt="hero-image" width={1024} height={580} priority={true} className="w-full scale-95 object-cover " />
+        <div className="w-full h-full pb-8 relative">
+          <Image src="/hero.jpg" alt="hero-image" width={2024} height={1024} priority={true} className="w-full scale-100 md:scale-95 object-cover " />
         </div>
       </section>
     </>

@@ -10,16 +10,16 @@ export const Links = [
         href: '/',
     },
     {
-        name: 'Portfolio',
-        href: '/portfolio',
-    },
-    {
         name: 'Produk',
         href: '/produk',
     },
     {
         name: 'Layanan',
         href: '/layanan',
+    },
+    {
+        name: 'Portfolio',
+        href: '/portfolio',
     },
     {
         name: 'Gallery',

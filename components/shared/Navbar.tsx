@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Button } from '../ui/button'
 import { Links } from '@/utils/data'
+import MobileNavbar from './MobileNavbar'
 
 const Navbar = () => {
   return (
@@ -46,7 +47,8 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-
+      {/* Mobile Navbar */}
+      <MobileNavbar />
     </>
   )
 }
