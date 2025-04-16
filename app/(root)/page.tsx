@@ -1,14 +1,14 @@
-import Image from "next/image";
+
+import Hero from "../components/Hero";
+import OurValue from "../components/OurValue";
 
 export default function Home() {
   return (
     <>
-      <section>
-        {/* Hero */}
-        <div className="w-full h-full pb-8 relative">
-          <Image src="/hero.jpg" alt="hero-image" width={2024} height={1024} priority={true} className="w-full scale-100 md:scale-95 object-cover " />
-        </div>
-      </section>
+      {/* Hero */}
+      <Hero />
+      {/* Value */}
+      <OurValue />
     </>
   );
 }
