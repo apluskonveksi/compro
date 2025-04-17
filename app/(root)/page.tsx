@@ -1,4 +1,5 @@
 
+import About from "../components/About";
 import Hero from "../components/Hero";
 import OurValue from "../components/OurValue";
 import ProblemSolved from "../components/ProblemSolved";
@@ -9,6 +10,10 @@ export default function Home() {
     <>
       {/* Hero */}
       <Hero />
+      {/* About */}
+      <section>
+        <About />
+      </section>
       {/* Value */}
       <OurValue />
       {/* Problem Solved */}
