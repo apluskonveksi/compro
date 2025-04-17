@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { Button } from '../ui/button'
-import { Links } from '@/utils/data'
+import { links } from '@/utils/data'
 import MobileNavbar from './MobileNavbar'
 
 const Navbar = () => {
@@ -38,7 +38,7 @@ const Navbar = () => {
             </div>
           </div>
           <ul className='w-full max-w-7xl mx-auto uppercase hidden md:flex justify-between gap- py-4'>
-            {Links.map((link, index) => (
+            {links.map((link, index) => (
               <li key={index} className='text-md lg:text-lg font-semibold'>
                 <Link href={link.href}>{link.name}</Link>
               </li>

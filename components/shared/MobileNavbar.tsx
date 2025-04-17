@@ -2,7 +2,7 @@ import { MenuIcon } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet'
-import { Links } from '@/utils/data'
+import { links } from '@/utils/data'
 import Link from 'next/link'
 import { Button } from '../ui/button'
 
@@ -19,7 +19,7 @@ const MobileNavbar = () => {
             <SheetTitle></SheetTitle>
           </SheetHeader>
           <ul className='flex flex-col gap-4 pt-14'>
-            {Links.map((link, index) => (
+            {links.map((link, index) => (
               <li key={index} className='text-md px-2 border-b border-gray-500 pb-4 uppercase font-semibold'>
                 <SheetClose asChild>
                   <Link href={link.href}>{link.name}</Link>

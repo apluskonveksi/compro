@@ -2,7 +2,7 @@
 import { Handshake, PencilRuler, Haze  } from 'lucide-react'
 
 
-export const Services = [
+export const services = [
     {
         id: 1,
         title: 'Professional',
@@ -25,7 +25,7 @@ export const Services = [
 
 
 
-export const Links = [
+export const links = [
     {
         name: 'Home',
         href: '/',
@@ -61,3 +61,56 @@ export const Links = [
 ] 
 
 
+export const products = [
+    {
+        id: 1,
+        title: 'Kaos',
+        cover: '/kaos.png',
+    },
+    {
+        id: 2,
+        title: 'Kemeja',
+        cover: '/kemeja.png',
+    },
+    {
+        id: 3,
+        title: 'Polo',
+        cover: '/polo.png',
+    },
+    {
+        id: 4,
+        title: 'Seragam Kantor',
+        cover: '/seragam-kantor.png',
+    },
+    {
+        id: 5,
+        title: 'Seragam Sekolah',
+        cover: '/seragam-sekolah.png',
+    },
+    
+    {
+        id: 6,
+        title: 'Jersey',
+        cover: '/jersey.png',
+    },
+    {
+        id: 7,
+        title: 'Jaket',
+        cover: '/jaket.png',
+    },
+    {
+        id: 8,
+        title: 'Hoodie',
+        cover: '/hoodie.png',
+    },
+    {
+        id: 9,
+        title: 'Souvenir',
+        cover: '/souvenir.png',
+    },
+    {
+        id: 10,
+        title: 'Rompi',
+        cover: '/rompi.png',
+    },
+]
