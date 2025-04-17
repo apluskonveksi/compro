@@ -22,7 +22,7 @@ export default function Home() {
       </section>
       <section className="my-8 sm:my-14">
         <div className=" py-4 w-full border-b border-red-500">
-          <h1 className="text-center  text-xl sm:text-2xl md:text-4xl font-bold ">PRODUK KAMI</h1>
+          <h1 className="text-center  text-xl sm:text-2xl md:text-4xl  "><span className="font-bold">PRODUK</span> KAMI</h1>
         </div>
         <div className="p-0 sm:p-8 mt-6">
           <Product />

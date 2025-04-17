@@ -87,29 +87,33 @@ export const products = [
         title: 'Seragam Sekolah',
         cover: '/seragam-sekolah.png',
     },
-    
     {
         id: 6,
+        title: 'Wearpack',
+        cover: '/wearpack.png',
+    },
+    {
+        id: 7,
         title: 'Jersey',
         cover: '/jersey.png',
     },
     {
-        id: 7,
+        id: 8,
         title: 'Jaket',
         cover: '/jaket.png',
     },
     {
-        id: 8,
+        id: 9,
         title: 'Hoodie',
         cover: '/hoodie.png',
     },
     {
-        id: 9,
+        id: 10,
         title: 'Souvenir',
         cover: '/souvenir.png',
     },
     {
-        id: 10,
+        id: 11,
         title: 'Rompi',
         cover: '/rompi.png',
     },

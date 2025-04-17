@@ -4,8 +4,8 @@ import React from 'react'
 const About = () => {
   return (
 
-    <div className='my-8'>
-      <h1 className='text-lg sm:text-xl md:text-4xl text-[#1A202D] my-4'>Tentang Kami</h1>
+    <div className='my-8 '>
+      <h1 className='text-lg sm:text-xl md:text-4xl text-[#1A202D] my-4'><span className='font-bold'>Tentang</span> Kami</h1>
       <div className='flex items-start justify-center gap-2 flex-col md:flex-row'>
         <div className='antialiased w-full max-w-4xl px-2 text-gray-600 text-md md:text-lg leading-relaxed'>
           <p>Aplus Konveksi adalah mitra terpercaya dalam dunia konveksi yang berkomitmen tinggi untuk memberikan hasil produksi yang tidak hanya sesuai pesanan, tetapi juga unggul dalam hal kualitas dan ketepatan waktu. Kami memahami bahwa setiap produk yang kami hasilkan mencerminkan identitas brand klien, oleh karena itu kami selalu menjunjung tinggi standar mutu dalam setiap proses produksi.</p>
