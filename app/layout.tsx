@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" translate="no" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${nunito.variable} bg-white text-[#121212] antialiased`}>
         <Navbar />

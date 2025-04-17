@@ -11,7 +11,9 @@ export default function Home() {
       {/* Value */}
       <OurValue />
       {/* Problem Solved */}
-      <ProblemSolved />
+      <section className="my-8 sm:my-14">
+        <ProblemSolved />
+      </section>
     </>
   );
 }
