@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" translate="no" suppressHydrationWarning>
       <body
-        className={`${nunito.variable} antialiased`}>
+        className={`${nunito.variable} bg-white text-[#121212] antialiased`}>
         <Navbar />
         <div className="w-full px-2 md:px-12 lg:px-16 xl:px-24 2xl:px-32 ">
           {children}
