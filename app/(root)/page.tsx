@@ -38,9 +38,9 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="my-8 sm:my-14">
-        <div className=" py-4 w-full space-y-4">
-          <h1 className="text-center  text-xl sm:text-2xl md:text-4xl  "><span className="font-bold border-b-2 border-red-500 pb-1 text-[#1A202D]">LAYANAN</span> KAMI</h1>
+      <section className="my-8 sm:my-14 bg-gray-100">
+        <div className=" w-full pt-8">
+          <h1 className="text-center py-8 text-xl sm:text-2xl md:text-4xl  "><span className="font-bold border-b-2 border-red-500 pb-1 text-[#1A202D]">LAYANAN</span> KAMI</h1>
           <p className="text-center text-lg md:text-xl text-[#1A202D]">Aplus Konveksi hadir sebagai solusi terlengkap untuk kebutuhan produksi sandang
             dan promosi Anda.</p>
         </div>

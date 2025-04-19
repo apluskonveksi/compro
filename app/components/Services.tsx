@@ -13,12 +13,12 @@ const poppins = Poppins({
 
 const Services = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-4 py-8'>
+    <div className='flex flex-wrap gap-6 py-8'>
       {services.map((service, index) => (
-        <div key={index} className='flex flex-col sm:flex-row gap-4 border-b pb-4'>
-          <Image src={service.cover} alt={service.title} width={200} height={150} priority={true} className='object-cover ' />
-          <div className='space-y-2'>
-            <h1 className='text-lg md:text-xl font-bold'>{service.title}</h1>
+        <div key={index} className='flex flex-col bg-gray-50 pb-4 w-[350px] mx-auto shadow-md rounded-b-lg'>
+          <Image src={service.cover} alt={service.title} width={200} height={150} priority={true} className='object-cover w-full ' />
+          <div className='space-y-2 p-2'>
+            <h1 className='text-lg md:text-xl font-bold uppercase'>{service.title}</h1>
             <p className={`${poppins.className} text-[#1A202D]`}>{service.desc}</p>
           </div>
         </div>
