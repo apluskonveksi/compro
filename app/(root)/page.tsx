@@ -50,7 +50,7 @@ export default function Home() {
       </section>
 
       {/* Cara Order */}
-      <section className=" py-8 sm:py-14 w-full h-screen relative my-8 sm:my-14 flex items-center justify-between">
+      <section className=" py-8 sm:py-14 w-full h-full relative my-8 sm:my-14 flex items-center justify-between">
         <Orders />
       </section>
     </>
