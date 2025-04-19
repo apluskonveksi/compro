@@ -20,7 +20,7 @@ const MobileNavbar = () => {
           </SheetHeader>
           <ul className='flex flex-col gap-4 pt-14'>
             {links.map((link, index) => (
-              <li key={index} className='text-md px-2 border-b border-gray-500 pb-4 uppercase font-semibold'>
+              <li key={index} className='text-md px-4 border-b border-gray-500 pb-4 uppercase font-semibold'>
                 <SheetClose asChild>
                   <Link href={link.href}>{link.name}</Link>
                 </SheetClose>
@@ -41,7 +41,7 @@ const MobileNavbar = () => {
                 <Image src="/youtube.png" width={30} height={30} alt='instagram' className='object-cover' />
               </Link>
             </div>
-            <Link href="/">
+            <Link href="https://wa.me/6282123322019?text=hi%20aplus%20konveksi" target='_blank'>
               <Button variant="default" size="sm" className="cursor-pointer" >HUBUNGI KAMI</Button>
             </Link>
           </div>

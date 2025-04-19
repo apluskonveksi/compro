@@ -24,7 +24,7 @@ const Navbar = () => {
                 <Image src="/youtube.png" width={20} height={20} alt='instagram' className='object-cover' />
               </Link>
             </div>
-            <Link href="/">
+            <Link href="https://wa.me/6282123322019?text=hi%20aplus%20konveksi" target='_blank'>
               <Button variant="default" size="sm" className="cursor-pointer" >HUBUNGI KAMI</Button>
             </Link>
           </div>
