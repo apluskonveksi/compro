@@ -39,7 +39,7 @@ const Navbar = () => {
           </div>
           <ul className='w-full max-w-7xl mx-auto uppercase hidden md:flex justify-between gap- py-4'>
             {links.map((link, index) => (
-              <li key={index} className='text-md lg:text-lg font-semibold'>
+              <li key={index} className='text-md lg:text-lg font-semibold text-[#1A202D]'>
                 <Link href={link.href}>{link.name}</Link>
               </li>
             ))}

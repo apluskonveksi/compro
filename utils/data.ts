@@ -2,7 +2,7 @@
 import { Handshake, PencilRuler, Haze  } from 'lucide-react'
 
 
-export const services = [
+export const abouts = [
     {
         id: 1,
         title: 'Professional',
@@ -117,4 +117,45 @@ export const products = [
         title: 'Rompi',
         cover: '/rompi.png',
     },
+]
+
+
+
+export const services = [
+    {
+        id: 1,
+        title: 'Konveksi',
+        cover: '/konveksi.png',
+        desc: 'Kami memproduksi berbagai jenis pakaian seperti kaos, kemeja, seragam, jaket, hingga wearpack dalam skala kecil hingga besar',
+    },
+    {
+        id: 2,
+        title: 'DTF (Direct to Film)',
+        cover: '/dtf.png',
+        desc: 'Layanan cetak gambar berkualitas tinggi di atas bahan kain menggunakan teknologi DTF.',
+    },
+    {
+        id: 3,
+        title: 'Sablon',
+        cover: '/sablon.png',
+        desc: 'Menyediakan berbagai teknik sablon seperti rubber, plastisol, hingga sablon glow in the dark.',
+    },
+    {
+        id: 4,
+        title: 'Bordir',
+        cover: '/bordir.png',
+        desc: 'Bordir komputer dengan hasil detail dan presisi tinggi untuk logo, emblem, atau nama.',
+    },
+    {
+        id: 5,
+        title: 'Souvenir',
+        cover: '/souvenir.png',
+        desc: 'Kami menyediakan beragam produk souvenir custom yang cocok untuk kebutuhan promosi, seminar, hingga event perusahaan.',
+    },
+    {
+        id: 6,
+        title: 'Custom Design',
+        cover: '/custom-design.png',
+        desc: 'Tim desainer kami siap membantu Anda membuat desain pakaian, logo, atau kebutuhan grafis lainnya sesuai dengan identitas brand Anda. Mulai dari nol hingga siap cetak.',
+    }
 ]
