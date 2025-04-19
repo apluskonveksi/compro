@@ -1,5 +1,5 @@
 
-import { Handshake, PencilRuler, Haze  } from 'lucide-react'
+import { Handshake, PencilRuler, Haze, Info, MessageCircleCodeIcon, Inbox, SendIcon  } from 'lucide-react'
 
 
 export const abouts = [
@@ -158,4 +158,33 @@ export const services = [
         cover: '/custom-design.png',
         desc: 'Tim desainer kami siap membantu Anda membuat desain pakaian, logo, atau kebutuhan grafis lainnya sesuai dengan identitas brand Anda. Mulai dari nol hingga siap cetak.',
     }
+]
+
+
+
+export const orders = [
+    {
+        id: 1,
+        title: 'INFORMASI CS',
+        description: 'Kunjungi Website atau Social Media kami untuk Mendapatkan Referensi Model',
+        icon: Info
+    },
+    {
+        id: 2,
+        title: 'KONSULTASI',
+        description: ' konsultasikan order anda berupa Model, Ukuran atau Desain Tambahan Bordir/Sablon',
+        icon: MessageCircleCodeIcon
+    },
+    {
+        id: 3,
+        title: 'IN ORDER',
+        description: 'Pesanan anda siap dikerjakan sesuai dengan permintaan',
+        icon: Inbox
+    },
+    {
+        id: 4,
+        title: 'PENGIRIMAN',
+        description: 'Setelah order selesai diproduksi, akan dikirim ke customer sesuai waktu kesepakatan',
+        icon: SendIcon
+    },
 ]

@@ -1,10 +1,10 @@
-
 import About from "../components/About";
 import Hero from "../components/Hero";
 import OurValue from "../components/OurValue";
 import ProblemSolved from "../components/ProblemSolved";
 import Product from "../components/Product";
 import Services from "../components/Services";
+import Orders from "../components/Orders";
 
 export default function Home() {
   return (
@@ -44,10 +44,14 @@ export default function Home() {
           <p className="text-center text-lg md:text-xl text-[#1A202D]">Aplus Konveksi hadir sebagai solusi terlengkap untuk kebutuhan produksi sandang
             dan promosi Anda.</p>
         </div>
-
         <div className="p-0 sm:p-8 mt-6">
           <Services />
         </div>
+      </section>
+
+      {/* Cara Order */}
+      <section className=" py-8 sm:py-14 w-full h-screen relative my-8 sm:my-14 flex items-center justify-between">
+        <Orders />
       </section>
     </>
   );
