@@ -10,10 +10,10 @@ const Contact = () => {
         <p className='text-md md:text-lg font-semibold text-[#1A202D]'>Hubungi kami melalui kontak di bawah ini untuk konsultasi, pemesanan, atau kerja sama.
           Tim kami akan merespons dengan cepat dan ramah.</p>
       </div>
-      <div className='w-full flex flex-col md:flex-row items-start justify-evenly px-4 py-8'>
+      <div className='w-full max-w-[1200px] mx-auto flex flex-col md:flex-row items-start justify-center px-4 py-8'>
         {/* LEFT */}
         <div className='w-full'>
-          <h1 className='p-3 text-lg font-semibold'>Info Kontak</h1>
+          <h1 className='py-3 text-lg font-semibold'>Info Kontak</h1>
           <div className='flex items-center gap-2 w-full max-w-[500px]'>
             {/* Icon */}
             <Image src="/tlp.png" alt='telp-icon' width={50} height={50} priority={true} className='object-cover' />
@@ -29,7 +29,7 @@ const Contact = () => {
           <div className='flex items-center gap-2 w-full max-w-[500px]'>
             {/* Icon */}
             <Image src="/address.png" alt='address-icon' width={50} height={50} priority={true} className='object-cover' />
-            <p className='text-md md:text-lg text-[#1A202D] font-semibold'>Jl.Sindanglaya No.19 Bandung, Jawa-barat</p>
+            <p className='text-md md:text-lg text-[#1A202D] font-semibold'>Jl.Arcamanik No.19 Bandung, Jawa-barat</p>
           </div>
 
           <div className='flex items-center gap-2 w-full max-w-[500px]'>
@@ -55,7 +55,7 @@ const Contact = () => {
 
             <div className='flex flex-col gap-1 w-full mb-3'>
               <label>Email</label>
-              <input type="text" className='w-full px-3 py-2 max-w-[500px] border border-gray-400 rounded-md outline-none focus:border-red-400 focus:outline-none' />
+              <input type="email" className='w-full px-3 py-2 max-w-[500px] border border-gray-400 rounded-md outline-none focus:border-red-400 focus:outline-none' />
             </div>
 
             <Button className='w-full max-w-[500px] bg-red-500 text-white hover:bg-red-600 transition-all duration-200 ease-in-out my-3 cursor-pointer'>Kirim Pesan</Button>
