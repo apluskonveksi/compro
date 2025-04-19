@@ -5,6 +5,7 @@ import ProblemSolved from "../components/ProblemSolved";
 import Product from "../components/Product";
 import Services from "../components/Services";
 import Orders from "../components/Orders";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
@@ -52,6 +53,11 @@ export default function Home() {
       {/* Cara Order */}
       <section className=" py-8 sm:py-14 w-full h-full relative my-8 sm:my-14 flex items-center justify-between">
         <Orders />
+      </section>
+
+      {/* Contact */}
+      <section className="py-14 sm:py-24">
+        <Contact />
       </section>
     </>
   );
