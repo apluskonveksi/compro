@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className='w-full text-center text-md text-white p-4 bg-red-500'>
+      <div className='w-full text-center text-md text-white p-4 bg-[#121212]'>
         <h1>Aplus Konveksi Bandung - Copyright©2025</h1>
       </div>
       <div className='fixed bottom-14 right-4 z-50'>

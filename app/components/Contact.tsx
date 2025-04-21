@@ -1,15 +1,26 @@
+"use client"
+
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import React from 'react'
 
 const Contact = () => {
+
+  const pathname = usePathname()
+
+
+
+
   return (
     <div className='w-full'>
-      <div className='p-4 text-center space-y-4'>
-        <h1 className='text-2xl sm:text-2xl md:text-5xl pb-3'><span className='font-bold text-red-500 border-b-2 border-[#1A202D] pb-1 '>Hubungi</span> Kami</h1>
-        <p className='text-md md:text-lg font-semibold text-[#1A202D]'>Hubungi kami melalui kontak di bawah ini untuk konsultasi, pemesanan, atau kerja sama.
-          Tim kami akan merespons dengan cepat dan ramah.</p>
-      </div>
+      {pathname !== '/kontak' && (
+        <div className='p-4 text-center space-y-4'>
+          <h1 className='text-2xl sm:text-2xl md:text-5xl pb-3'><span className='font-bold text-red-500 border-b-2 border-[#1A202D] pb-1 '>Hubungi</span> Kami</h1>
+          <p className='text-md md:text-lg font-semibold text-[#1A202D]'>Hubungi kami melalui kontak di bawah ini untuk konsultasi, pemesanan, atau kerja sama.
+            Tim kami akan merespons dengan cepat dan ramah.</p>
+        </div>
+      )}
       <div className='w-full max-w-[1200px] mx-auto flex flex-col md:flex-row items-start justify-center px-4 py-8'>
         {/* LEFT */}
         <div className='w-full'>

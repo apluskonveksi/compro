@@ -34,10 +34,10 @@ export const links = [
         name: 'Produk',
         href: '/produk',
     },
-    {
-        name: 'Layanan',
-        href: '/layanan',
-    },
+    // {
+    //     name: 'Layanan',
+    //     href: '/layanan',
+    // },
     // {
     //     name: 'Portfolio',
     //     href: '/portfolio',

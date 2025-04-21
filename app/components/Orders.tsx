@@ -12,7 +12,7 @@ const poppins = Poppins({
 const Orders = () => {
   return (
     <>
-      <div className="bg-[url('/bg.png')] bg-right bg-cover w-full h-full absolute left-0 top-0 right-0 -z-50 opacity-90" />
+      <div className="bg-[url('/bg.png')]  bg-right bg-cover w-full h-full absolute left-0 top-0 right-0 -z-50 opacity-90" />
       <div className="pt-14 md:pt-24">
         <h1 className="text-center text-3xl md:text-6xl  text-white font-bold pb-2 md:pb-8 border-b-2 w-fit mx-auto">Cara Order</h1>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-1 md:gap-4 p-1 sm:p-8 my-2 md:my-8">
