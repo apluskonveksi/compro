@@ -20,7 +20,7 @@ const About = () => {
           <br />
           <p> Komitmen kami tidak hanya berhenti pada hasil akhir yang memuaskan, namun juga pada pelayanan yang komunikatif, fleksibel, dan mengedepankan kebutuhan klien. Dengan semangat kolaborasi dan inovasi, Aplus Konveksi siap menjadi bagian dari kesuksesan brand Anda melalui produk-produk yang berkualitas dan terpercaya.</p>
         </div>
-        <div className='w-fit mx-auto'>
+        <div className='w-fit mx-auto mt-6 md:mt-0'>
           <Image src="/about.png" alt="Aplus Konveksi" width={500} height={400} priority={true} className='object-cover ' />
         </div>
       </div>

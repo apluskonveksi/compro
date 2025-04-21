@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import { Nunito } from "next/font/google";
+import AnimatedPresenceWrapper from "@/components/AnimatePresence";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -27,9 +28,11 @@ export default function RootLayout({
       <body
         className={`${nunito.variable} bg-white text-[#121212] antialiased`}>
         <Navbar />
-        <div className="w-full px-2 md:px-12 lg:px-16 xl:px-24 2xl:px-32 ">
-          {children}
-        </div>
+        <AnimatedPresenceWrapper mode="wait">
+          <div className="w-full px-2 md:px-12 lg:px-16 xl:px-24 2xl:px-32 ">
+            {children}
+          </div>
+        </AnimatedPresenceWrapper>
         <Footer />
       </body>
     </html>
