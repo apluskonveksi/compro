@@ -14,6 +14,7 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "Aplus Konveksi Bandung",
   description: "Aplus Konveksi Bandung adalah mitra terpercaya dalam dunia konveksi yang berkomitmen tinggi untuk memberikan hasil produksi yang tidak hanya sesuai pesanan, tetapi juga unggul dalam hal kualitas dan ketepatan waktu. Kami memahami bahwa setiap produk yang kami hasilkan mencerminkan identitas brand klien, oleh karena itu kami selalu menjunjung tinggi standar mutu dalam setiap proses produksi.",
+
 };
 
 export default function RootLayout({
