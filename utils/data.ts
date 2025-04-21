@@ -38,10 +38,10 @@ export const links = [
         name: 'Layanan',
         href: '/layanan',
     },
-    {
-        name: 'Portfolio',
-        href: '/portfolio',
-    },
+    // {
+    //     name: 'Portfolio',
+    //     href: '/portfolio',
+    // },
     {
         name: 'Gallery',
         href: '/gallery',
