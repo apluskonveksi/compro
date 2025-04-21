@@ -14,7 +14,7 @@ const Navbar = () => {
           <div className='hidden sm:flex items-center gap-4'>
             {/* SOSIAL MEDIA */}
             <div className='flex items-center justify-center gap-2'>
-              <Link href="/" target='_blank' className='px-2'>
+              <Link href="https://www.instagram.com/apluskonveksibandung" target='_blank' className='px-2'>
                 <Image src="/instagram.png" width={20} height={20} alt='instagram' className='object-cover' />
               </Link>
               <Link href="/" target='_blank' className='px-2'>
