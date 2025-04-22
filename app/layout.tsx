@@ -26,6 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4091863714106054"
+          crossOrigin="anonymous"></script>
+      </head>
       <body
         className={`${nunito.variable} bg-white text-[#121212] antialiased`}>
         <Navbar />
