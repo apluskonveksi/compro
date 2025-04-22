@@ -4,6 +4,7 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import { Nunito } from "next/font/google";
 import AnimatedPresenceWrapper from "@/components/AnimatePresence";
+import GoogleAdsense from "@/components/GoogleAdsense";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -35,6 +36,7 @@ export default function RootLayout({
         </AnimatedPresenceWrapper>
         <Footer />
       </body>
+      <GoogleAdsense pId="4091863714106054" />
     </html>
   );
 }
