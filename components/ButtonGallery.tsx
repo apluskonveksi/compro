@@ -52,6 +52,11 @@ const buttons: { id: number; type: "button" | "submit" | "reset"; name: string }
     id: 10,
     type: "button",
     name: "souvenir",
+  },
+  {
+    id: 11,
+    type: "button",
+    name: "polo",
   }
 ];
 
