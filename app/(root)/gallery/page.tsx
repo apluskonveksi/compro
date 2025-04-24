@@ -16,7 +16,7 @@ const Gallery = () => {
       try {
         setIsLoading(true);
         const response = await axios.get(
-          `/api/cloudinary?activeButton=${activeButton}`
+          `${process.env.NEXT_PUBLIC_URL}/api/cloudinary?activeButton=${activeButton}`
         );
         setData(response.data);
       } catch (error) {
