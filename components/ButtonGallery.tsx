@@ -11,40 +11,45 @@ const buttons: { id: number; type: "button" | "submit" | "reset"; name: string }
   {
     id: 2,
     type: "button",
-    name: "kemeja",
+    name: "jersey",
   },
   {
     id: 3,
     type: "button",
-    name: "jaket",
+    name: "kemeja",
   },
   {
     id: 4,
     type: "button",
-    name: "rompi",
+    name: "jaket",
   },
   {
     id: 5,
     type: "button",
-    name: "seragam-kantor",
+    name: "rompi",
   },
   {
     id: 6,
     type: "button",
-    name: "seragam-sekolah",
+    name: "seragam-kantor",
   },
   {
     id: 7,
     type: "button",
-    name: "hoodie",
+    name: "seragam-sekolah",
   },
   {
     id: 8,
     type: "button",
-    name: "wearpack",
+    name: "hoodie",
   },
   {
     id: 9,
+    type: "button",
+    name: "wearpack",
+  },
+  {
+    id: 10,
     type: "button",
     name: "souvenir",
   }
