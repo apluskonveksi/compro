@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
@@ -66,11 +67,30 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4091863714106054"
-          crossOrigin="anonymous"></script>
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4091863714106054"
+          crossOrigin="anonymous" />
+
+        {/* Google Tag Manager */}
+        <Script id="gtm-head" strategy="afterInteractive">
+          {`
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-${process.env.GTM}');
+  `}
+        </Script>
       </head>
       <body
         className={`${nunito.variable} bg-white text-[#121212] antialiased`}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WWP3CW2Q"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <Navbar />
         <AnimatedPresenceWrapper mode="wait">
           <div className="w-full px-2 md:px-12 lg:px-16 xl:px-24 2xl:px-32 ">
