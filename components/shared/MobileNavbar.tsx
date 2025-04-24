@@ -9,7 +9,9 @@ import { Button } from '../ui/button'
 const MobileNavbar = () => {
   return (
     <div className='w-full flex justify-between md:hidden py-4 px-2'>
-      <Image src="/logo.png" width={120} height={100} priority={true} alt='logo-aplus-konveksi' className='object-cover' />
+      <Link href="/">
+        <Image src="/logo.png" width={120} height={100} priority={true} alt='logo-aplus-konveksi' className='object-cover' />
+      </Link>
       <Sheet >
         <SheetTrigger asChild>
           <MenuIcon className='text-red-500' size={32} />

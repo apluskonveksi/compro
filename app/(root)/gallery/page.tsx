@@ -1,23 +1,46 @@
-import { Button } from '@/components/ui/button'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+"use client";
+
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import LightGalleryImage from "@/components/Lightgallery";
+import ButtonGallery from "@/components/ButtonGallery";
+
 
 const Gallery = () => {
+  const [data, setData] = useState([]);
+  const [activeButton, setActiveButton] = useState("kaos");
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    const getGallery = async () => {
+      try {
+        setIsLoading(true);
+        const response = await axios.get(
+          `/api/cloudinary?activeButton=${activeButton}`
+        );
+        setData(response.data);
+      } catch (error) {
+        setIsLoading(false);
+        console.error("Error fetching images:", error);
+      } finally {
+        setIsLoading(false);
+        // Setelah permintaan selesai, isLoading diubah menjadi false
+      }
+    };
+    getGallery();
+  }, [activeButton]);
+
   return (
-    <div className='w-full h-full min-h-screen flex items-center justify-center'>
-      <div className='w-full max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2'>
-        <div className='w-full'>
-          <h1 className='text-4xl md:text-6xl leading-relaxed pb-6 font-semibold'>PAGE IS UNDER CONSTRUCTION</h1>
-          <Link href="/" className='w-fit mx-auto'>
-            <Button variant="default" size="lg" className='rounded-full flex items-center justify-center' >Kembali</Button>
-          </Link>
-        </div>
-        <Image src="/mn.jpg" alt='maintenance' width={1200} height={1200} priority={true} className='object-contain w-full mt-24 md:mt-0' />
+    <section className="w-full flex flex-col md:flex-row gap-4 my-8 md:my-14">
+
+      <div className="w-full md:w-52 border-r border-gray-300 pr-4 md:pr-0">
+        <ButtonGallery
+          activeButton={activeButton}
+          setActiveButton={setActiveButton}
+        />
       </div>
-
-    </div>
-  )
-}
-
-export default Gallery
+      <LightGalleryImage data={data} isLoading={isLoading} />
+    </section>
+  );
+};
+export default Gallery;
