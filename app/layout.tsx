@@ -19,13 +19,16 @@ export const metadata: Metadata = {
   description:
     "Aplus Konveksi adalah mitra terpercaya dalam dunia konveksi yang berkomitmen tinggi untuk memberikan hasil produksi yang tidak hanya sesuai pesanan, tetapi juga unggul dalam hal kualitas dan ketepatan waktu. Kami memahami bahwa setiap produk yang kami hasilkan mencerminkan identitas brand klien, oleh karena itu kami selalu menjunjung tinggi standar mutu dalam setiap proses produksi.",
   keywords: [
-    "konveksi Bandung",
+    "konveksi bandung",
     "konveksi murah",
     "buat kaos bandung",
     "konveksi jaket bandung",
     "aplus konveksi",
+    "konveksi aplus",
     "seragam kantor",
     "seragam sekolah",
+    "konveksi sindanglaya",
+    "konveksi kaos",
     "konveksi terpercaya"
   ],
   authors: [{ name: "Aplus Konveksi", url: "https://apluskonveksi.com" }],
@@ -57,6 +60,15 @@ export const metadata: Metadata = {
     images: ["https://apluskonveksi.com/og-image.jpg"],
   },
   metadataBase: new URL("https://apluskonveksi.com"),
+};
+
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Aplus Konveksi",
+  "url": "https://apluskonveksi.com",
+  "logo": "https://apluskonveksi.com/logo-a.png"
 };
 
 export default function RootLayout({
@@ -91,6 +103,13 @@ export default function RootLayout({
     })(window,document,'script','dataLayer','GTM-${process.env.GTM}');
   `}
         </Script>
+
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
       </head>
       <body
         className={`${nunito.variable} bg-white text-[#121212] antialiased`}>
