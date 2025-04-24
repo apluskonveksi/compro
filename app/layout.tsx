@@ -14,9 +14,48 @@ const nunito = Nunito({
 
 
 export const metadata: Metadata = {
-  title: "Aplus Konveksi Bandung",
-  description: "Aplus Konveksi Bandung adalah mitra terpercaya dalam dunia konveksi yang berkomitmen tinggi untuk memberikan hasil produksi yang tidak hanya sesuai pesanan, tetapi juga unggul dalam hal kualitas dan ketepatan waktu. Kami memahami bahwa setiap produk yang kami hasilkan mencerminkan identitas brand klien, oleh karena itu kami selalu menjunjung tinggi standar mutu dalam setiap proses produksi.",
-
+  title: "Konveksi Bandung | Aplus Konveksi",
+  description:
+    "Aplus Konveksi adalah mitra terpercaya dalam dunia konveksi yang berkomitmen tinggi untuk memberikan hasil produksi yang tidak hanya sesuai pesanan, tetapi juga unggul dalam hal kualitas dan ketepatan waktu. Kami memahami bahwa setiap produk yang kami hasilkan mencerminkan identitas brand klien, oleh karena itu kami selalu menjunjung tinggi standar mutu dalam setiap proses produksi.",
+  keywords: [
+    "konveksi Bandung",
+    "konveksi murah",
+    "buat kaos bandung",
+    "konveksi jaket bandung",
+    "aplus konveksi",
+    "seragam kantor",
+    "seragam sekolah",
+    "konveksi terpercaya"
+  ],
+  authors: [{ name: "Aplus Konveksi", url: "https://apluskonveksi.com" }],
+  creator: "Aplus Konveksi",
+  publisher: "Aplus Konveksi",
+  openGraph: {
+    title: "Konveksi Bandung | Aplus Konveksi",
+    description:
+      "Temukan layanan konveksi terpercaya di Bandung bersama Aplus Konveksi. Produksi berkualitas, tepat waktu, dan sesuai kebutuhan brand Anda.",
+    url: "https://apluskonveksi.com",
+    siteName: "Aplus Konveksi",
+    locale: "id_ID",
+    type: "website",
+    images: [
+      {
+        url: "https://apluskonveksi.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Aplus Konveksi Bandung",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Konveksi Bandung | Aplus Konveksi",
+    description:
+      "Aplus Konveksi menyediakan layanan konveksi berkualitas di Bandung untuk berbagai kebutuhan brand Anda.",
+    creator: "@apluskonveksi",
+    images: ["https://apluskonveksi.com/og-image.jpg"],
+  },
+  metadataBase: new URL("https://apluskonveksi.com"),
 };
 
 export default function RootLayout({
