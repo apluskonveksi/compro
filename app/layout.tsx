@@ -67,9 +67,20 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Google Analystic */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-SG7BM1B734" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SG7BM1B734');
+          `}
+        </Script>
+
+        {/* Google Adsense */}
         <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4091863714106054"
           crossOrigin="anonymous" />
-
         {/* Google Tag Manager */}
         <Script id="gtm-head" strategy="afterInteractive">
           {`
