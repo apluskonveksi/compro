@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className='w-full px-4 bg-white border-b border-[#121212] '>
             <div className='flex items-center justify-center p-4'>
               <Link href="/" >
-                <Image src="/logo.png" width={200} height={200} priority={true} alt='logo-aplus-konveksi' className='object-cover px-4  ' />
+                <Image src="/logo-ak.png" width={200} height={200} priority={true} alt='logo-aplus-konveksi' className='object-cover px-4  ' />
               </Link>
             </div>
           </div>
