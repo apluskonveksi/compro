@@ -33,14 +33,14 @@ const MobileNavbar = () => {
             <p>Social Media</p>
             {/* SOSIAL MEDIA */}
             <div className='flex items-center justify-center gap-2'>
-              <Link href="/" target='_blank' className='px-2'>
+              <Link href="https://www.instagram.com/apluskonveksibandung" target='_blank' className='px-2'>
                 <Image src="/instagram.png" width={30} height={30} alt='instagram' className='object-cover' />
               </Link>
-              <Link href="/" target='_blank' className='px-2'>
+              <Link href="https://www.facebook.com/aboyz.jjah" target='_blank' className='px-2'>
                 <Image src="/facebook.png" width={30} height={30} alt='instagram' className='object-cover' />
               </Link>
-              <Link href="/" target='_blank' className='px-2'>
-                <Image src="/youtube.png" width={30} height={30} alt='instagram' className='object-cover' />
+              <Link href="https://www.tiktok.com/@aplus.konveksi" target='_blank' className='px-2'>
+                <Image src="/tiktok.png" width={30} height={30} alt='instagram' className='object-cover' />
               </Link>
             </div>
             <Link href="https://wa.me/6282123322019?text=hi%20aplus%20konveksi" target='_blank'>

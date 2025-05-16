@@ -20,8 +20,8 @@ const Navbar = () => {
               <Link href="https://www.facebook.com/aboyz.jjah" target='_blank' className='px-2'>
                 <Image src="/facebook.png" width={20} height={20} alt='instagram' className='object-cover' />
               </Link>
-              <Link href="https://youtube.com" target='_blank' className='px-2'>
-                <Image src="/youtube.png" width={20} height={20} alt='instagram' className='object-cover' />
+              <Link href="https://www.tiktok.com/@aplus.konveksi" target='_blank' className='px-2'>
+                <Image src="/tiktok.png" width={20} height={20} alt='instagram' className='object-cover' />
               </Link>
             </div>
             <Link href="https://wa.me/6282123322019?text=hi%20aplus%20konveksi" target='_blank'>
