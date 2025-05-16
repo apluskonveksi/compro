@@ -1,7 +1,12 @@
 {
-  "name": "website",
+  "name": "aplus-konveksi",
   "version": "0.1.0",
   "private": true,
+  "description": "Aplikasi Konveksi",
+  "author": "Aplus Konveksi adalah mitra terpercaya dalam dunia konveksi yang berkomitmen tinggi untuk memberikan hasil produksi yang tidak hanya sesuai pesanan, tetapi juga unggul dalam hal kualitas dan ketepatan waktu. Kami memahami bahwa setiap produk yang kami hasilkan mencerminkan identitas brand klien, oleh karena itu kami selalu menjunjung tinggi standar mutu dalam setiap proses produksi.",
+  "license": "MIT",
+  "homepage": "https://apluskonveksi.com",
+
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

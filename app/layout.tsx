@@ -6,6 +6,7 @@ import Footer from "@/components/shared/Footer";
 import { Nunito } from "next/font/google";
 import AnimatedPresenceWrapper from "@/components/AnimatePresence";
 import GoogleAdsense from "@/components/GoogleAdsense";
+import PopUpPromotion from "@/components/shared/PopUpPromotion";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -124,6 +125,7 @@ export default function RootLayout({
         <Navbar />
         <AnimatedPresenceWrapper mode="wait">
           <div className="w-full px-2 md:px-12 lg:px-16 xl:px-24 2xl:px-32 ">
+            <PopUpPromotion />
             {children}
           </div>
         </AnimatedPresenceWrapper>
